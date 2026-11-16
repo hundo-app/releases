@@ -1,0 +1,14 @@
+name: Suggest an idea
+description: A feature, an improvement, something to make simpler.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Look at the [roadmap](https://github.com/hundo-app/releases/issues?q=label%3Aroadmap) first; a 👍 on an existing issue counts too.
+  - type: textarea
+    id: report
+    attributes:
+      label: The idea
+      description: What you would like, and what it would help you do.
+    validations:
+      required: true

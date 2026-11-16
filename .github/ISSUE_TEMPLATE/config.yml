@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: An error in a game's data
+    url: https://github.com/hundo-app/modules/issues/new?template=data.yml
+    about: A wrong item, name, state or place on the map in one game.
+  - name: Question or help
+    url: https://github.com/hundo-app/releases/discussions
+    about: Ask, share a tip, talk about Hundo.
+  - name: Security issue
+    url: https://github.com/hundo-app/releases/security/advisories/new
+    about: Report it privately, not in a public issue.

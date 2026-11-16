@@ -1,0 +1,30 @@
+name: Ask for a game
+description: A game Hundo should learn to read.
+labels: [game request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A game is added when someone writes its module, and a module is written from real saves.
+        If you can, [share a save](https://github.com/hundo-app/releases/issues/new?template=save.yml) instead: it is the request that gets a game added.
+  - type: input
+    id: game
+    attributes:
+      label: Game
+    validations:
+      required: true
+  - type: input
+    id: launcher
+    attributes:
+      label: Launcher
+      placeholder: Steam, Epic Games, GOG, Xbox / Game Pass…
+  - type: input
+    id: store
+    attributes:
+      label: Store page or ID
+      placeholder: https://store.steampowered.com/app/…
+  - type: textarea
+    id: report
+    attributes:
+      label: What Hundo should show
+      description: What 100 % means in this game, what you would like to follow.

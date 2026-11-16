@@ -1,0 +1,37 @@
+name: Share a save
+description: A save of yours, so Hundo can learn to read a game.
+labels: [save, game request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A real save is what a module is written and tested from. From the app, **Improve Hundo → Share a save** packs it into a zip and fills this in.
+        **This issue is public.** A save can hold your account's name or ID: look inside first if that matters to you.
+  - type: input
+    id: game
+    attributes:
+      label: Game
+    validations:
+      required: true
+  - type: input
+    id: launcher
+    attributes:
+      label: Launcher
+      placeholder: Steam, Epic Games, GOG, Xbox / Game Pass…
+  - type: input
+    id: store
+    attributes:
+      label: Store page or ID
+      placeholder: https://store.steampowered.com/app/…
+  - type: textarea
+    id: save
+    attributes:
+      label: The save
+      description: Drag the zip here (25 MB at most). Say where the game keeps it if you know.
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Where you are in the game
+      description: Its completion, what is done and what is not, what Hundo shows wrong.

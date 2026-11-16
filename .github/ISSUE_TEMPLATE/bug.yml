@@ -1,0 +1,32 @@
+name: Report a bug
+description: Something in Hundo does not work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. From the app, **Improve Hundo → Report a bug** fills in your version and system for you.
+        A wrong item, name or place in one game is a [game data report](https://github.com/hundo-app/modules/issues/new?template=data.yml) instead.
+  - type: textarea
+    id: report
+    attributes:
+      label: What happened
+      description: What you did, what happened, what you expected.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Hundo version
+      description: Settings → About.
+      placeholder: 0.1.0-alpha
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options: [Linux, Linux (Flatpak), macOS, Windows]
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Drag files here.
